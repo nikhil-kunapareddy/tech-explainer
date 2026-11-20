@@ -2,6 +2,8 @@
 
 Computer science explained in simple words, in the spirit of *Thing Explainer*.
 
+Live site: https://nikhil-kunapareddy.github.io/tech-explainer/
+
 ## Rules for every post
 
 1. No more than 1,000 words.
@@ -30,6 +32,10 @@ Computer science explained in simple words, in the spirit of *Thing Explainer*.
 3. In `index.html`, add a link to the post inside its topic's `<details>` block.
 4. Run `python3 check.py`.
 
-## View the site
+## View the site locally
 
 Run `python3 -m http.server 8000` in this folder, then open http://127.0.0.1:8000.
+
+## Publishing
+
+The site is hosted on GitHub Pages from the `main` branch. Every push to `main` updates the live site within a few minutes. `.nojekyll` tells GitHub to serve the files as they are, without running them through Jekyll.
