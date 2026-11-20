@@ -2,7 +2,7 @@
 
 Computer science explained in simple words, in the spirit of *Thing Explainer*.
 
-Live site: https://nikhil-kunapareddy.github.io/tech-explainer/
+Live site: https://techexplainer.duckdns.org/
 
 ## Rules for every post
 
@@ -39,3 +39,5 @@ Run `python3 -m http.server 8000` in this folder, then open http://127.0.0.1:800
 ## Publishing
 
 The site is hosted on GitHub Pages from the `main` branch. Every push to `main` updates the live site within a few minutes. `.nojekyll` tells GitHub to serve the files as they are, without running them through Jekyll.
+
+The domain `techexplainer.duckdns.org` comes from DuckDNS and points to GitHub Pages at `185.199.108.153`. The `CNAME` file tells GitHub which site to serve for that name, so don't delete it.
