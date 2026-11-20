@@ -1,0 +1,135 @@
+/* Kept small on purpose: the site should look almost like plain HTML. */
+
+/* ---- Colors: light by default, dark when chosen or when the computer prefers it ---- */
+
+:root {
+  color-scheme: light;
+  --bg: #fff;
+  --text: #111;
+  --muted: #555;
+  --link: #0000ee;
+  --visited: #551a8b;
+  --rule: #ccc;
+  --picture-filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121212;
+    --text: #e6e6e6;
+    --muted: #a0a0a0;
+    --link: #8ab4f8;
+    --visited: #c58af9;
+    --rule: #444;
+    --picture-filter: invert(0.9) hue-rotate(180deg);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121212;
+  --text: #e6e6e6;
+  --muted: #a0a0a0;
+  --link: #8ab4f8;
+  --visited: #c58af9;
+  --rule: #444;
+  --picture-filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* ---- Page ---- */
+
+body {
+  max-width: 42em;
+  margin: 0 auto;
+  padding: 1em 16px 3em;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a { color: var(--link); }
+a:visited { color: var(--visited); }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* Top bar: where you are on the left, theme button on the right. */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Sun and moon button. */
+.site-header button {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  color: var(--text);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.site-header button:hover {
+  background: var(--rule);
+}
+
+/* ---- Topics and subtopics on the home page ---- */
+
+details {
+  margin: 0.75em 0;
+}
+
+summary {
+  font-size: 1.25em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details ul {
+  margin-top: 0.5em;
+}
+
+/* ---- Posts ---- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Drawings are dark lines on white paper. Flip them in dark mode. */
+main img {
+  filter: var(--picture-filter);
+}
+
+figure {
+  margin: 1.5em 0;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* The grown-up name for a thing, shown next to the simple name. */
+.real-name {
+  font-size: 0.75em;
+  font-weight: normal;
+  color: var(--muted);
+}
+
+/* In headings, keep "(search engines)" together instead of splitting it across lines. */
+h1 .real-name,
+h2 .real-name {
+  white-space: nowrap;
+}

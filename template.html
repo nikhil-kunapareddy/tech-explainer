@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+  NEW POST TEMPLATE
+  1. Copy this file to topics/<topic>/<post>.html   (e.g. topics/web-development/how-cookies-work.html)
+  2. Put your picture in images/ (SVG, PNG, or JPG)
+  3. Replace every [BRACKETED] part below
+  4. In index.html, add a link inside the topic's <details> list.
+     New topic? Copy a whole <details id="..."> block and give it a new id.
+  5. Run: python3 check.py   (max 1,000 words, at least one picture)
+
+  Only the words inside <main> count toward the 1,000.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[POST TITLE] - Tech Explainer</title>
+<link rel="stylesheet" href="../../style.css">
+<script src="../../theme.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav><a href="../../index.html">Tech Explainer</a> &rsaquo; <a href="../../index.html#[topic-id]">[Topic Name]</a></nav>
+  <button id="theme-toggle" type="button" aria-label="Switch theme"></button>
+</header>
+
+<main>
+<h1>[POST TITLE] <span class="real-name">([REAL NAME])</span></h1>
+
+<p>[One short paragraph: what this thing is and why you'd care.]</p>
+
+<figure>
+  <img src="../../images/[PICTURE].svg" alt="[Say what the picture shows, for people who can't see it.]">
+  <figcaption>[One sentence about the picture.]</figcaption>
+</figure>
+
+<h2>[First idea, in simple words] <span class="real-name">([real word])</span></h2>
+
+<p>[Explain it. Short sentences. Compare it to something from everyday life.]</p>
+
+<h2>[Second idea] <span class="real-name">([real word])</span></h2>
+
+<p>[Explain it.]</p>
+
+<h2>Putting it all together</h2>
+
+<p>[Walk through the whole thing once, start to finish.]</p>
+</main>
+
+<hr>
+<p><a href="../../index.html#[topic-id]">&larr; More in [Topic Name]</a></p>
+
+</body>
+</html>

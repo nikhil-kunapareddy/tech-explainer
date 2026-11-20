@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440"
+     font-family="'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive" font-size="14"
+     fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#111" stroke="none"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="440" fill="#fff" stroke="none"/>
+
+  <!-- ===== BEFORE YOU ASK ===== -->
+  <text x="680" y="140" text-anchor="middle" fill="#111" stroke="none" font-size="16">BEFORE YOU ASK</text>
+  <text x="680" y="158" text-anchor="middle" fill="#555" stroke="none" font-size="12">(this never stops)</text>
+
+  <!-- Pages all over the web, linked to each other -->
+  <text x="115" y="40" text-anchor="middle" fill="#111" stroke="none">PAGES ALL OVER THE WEB</text>
+  <g stroke="#888" stroke-width="1.5">
+    <line x1="47" y1="92" x2="137" y2="84"/>
+    <line x1="47" y1="92" x2="72" y2="172"/>
+    <line x1="137" y1="84" x2="182" y2="157"/>
+    <line x1="72" y1="172" x2="182" y2="157"/>
+    <line x1="72" y1="172" x2="122" y2="232"/>
+    <line x1="182" y1="157" x2="122" y2="232"/>
+  </g>
+  <g fill="#fff">
+    <path d="M30 70 h24 l10 10 v34 h-34 Z"/>
+    <path d="M120 62 h24 l10 10 v34 h-34 Z"/>
+    <path d="M55 150 h24 l10 10 v34 h-34 Z"/>
+    <path d="M165 135 h24 l10 10 v34 h-34 Z"/>
+    <path d="M105 210 h24 l10 10 v34 h-34 Z"/>
+  </g>
+  <g stroke="#888" stroke-width="1.5">
+    <path d="M36 88 h20 M36 96 h22 M36 104 h16"/>
+    <path d="M126 80 h20 M126 88 h22 M126 96 h16"/>
+    <path d="M61 168 h20 M61 176 h22 M61 184 h16"/>
+    <path d="M171 153 h20 M171 161 h22 M171 169 h16"/>
+    <path d="M111 228 h20 M111 236 h22 M111 244 h16"/>
+  </g>
+
+  <!-- Computer reader -->
+  <line x1="270" y1="135" x2="270" y2="124"/>
+  <circle cx="270" cy="121" r="3" fill="#111"/>
+  <rect x="250" y="135" width="40" height="30" rx="6" fill="#fff"/>
+  <circle cx="262" cy="148" r="3" fill="#111"/>
+  <circle cx="278" cy="148" r="3" fill="#111"/>
+  <rect x="257" y="165" width="26" height="16" rx="3" fill="#fff"/>
+  <path d="M205 197 L314 197" marker-end="url(#head)"/>
+  <text x="270" y="222" text-anchor="middle" fill="#111" stroke="none" font-size="12">COMPUTER</text>
+  <text x="270" y="237" text-anchor="middle" fill="#111" stroke="none" font-size="12">READERS</text>
+  <text x="270" y="251" text-anchor="middle" fill="#555" stroke="none" font-size="11">(crawlers)</text>
+
+  <!-- Giant word list -->
+  <text x="420" y="40" text-anchor="middle" fill="#111" stroke="none">GIANT WORD LIST</text>
+  <text x="420" y="56" text-anchor="middle" fill="#555" stroke="none" font-size="12">(index)</text>
+  <rect x="320" y="70" width="200" height="185" rx="4" fill="#fff"/>
+  <rect x="326" y="86" width="188" height="20" fill="#fff8d6" stroke="none"/>
+  <rect x="326" y="116" width="188" height="20" fill="#fff8d6" stroke="none"/>
+  <g font-family="monospace" font-size="13" fill="#111" stroke="none">
+    <text x="332" y="101">bread → <tspan font-weight="bold" fill="#1a5fb4">12</tspan>, <tspan font-weight="bold" fill="#1a5fb4">409</tspan>, 7731…</text>
+    <text x="332" y="131">make  → 3, <tspan font-weight="bold" fill="#1a5fb4">12</tspan>, 88, <tspan font-weight="bold" fill="#1a5fb4">409</tspan>…</text>
+    <text x="332" y="161">tower → 51, 6020…</text>
+    <text x="332" y="191">zebra → 77, 1450…</text>
+    <text x="332" y="226" fill="#555">…every other word</text>
+  </g>
+
+  <!-- ===== Line between the two halves ===== -->
+  <line x1="20" y1="285" x2="780" y2="285" stroke="#999" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- ===== WHEN YOU ASK ===== -->
+  <text x="420" y="395" text-anchor="middle" fill="#111" stroke="none" font-size="16">WHEN YOU ASK</text>
+  <text x="420" y="413" text-anchor="middle" fill="#555" stroke="none" font-size="12">(less than a second)</text>
+
+  <!-- Search box -->
+  <text x="130" y="325" text-anchor="middle" fill="#111" stroke="none" font-size="13">YOU TYPE</text>
+  <rect x="20" y="340" width="220" height="40" rx="20" fill="#fff"/>
+  <text x="38" y="365" fill="#111" stroke="none" font-family="monospace" font-size="14">how to make bread</text>
+  <circle cx="212" cy="357" r="8"/>
+  <line x1="218" y1="363" x2="225" y2="370"/>
+
+  <!-- Look up the words, then rank -->
+  <path d="M225 336 L366 262" marker-end="url(#head)"/>
+  <text x="300" y="322" fill="#111" stroke="none" font-size="12">LOOK UP YOUR WORDS</text>
+  <path d="M470 260 L594 334" marker-end="url(#head)"/>
+
+  <!-- Best pages first -->
+  <rect x="595" y="305" width="185" height="115" rx="4" fill="#fff"/>
+  <text x="687" y="326" text-anchor="middle" fill="#111" stroke="none" font-size="13">BEST PAGES FIRST</text>
+  <g font-size="13" fill="#111" stroke="none">
+    <text x="606" y="355">1.</text>
+    <text x="606" y="382">2.</text>
+    <text x="606" y="409">3.</text>
+  </g>
+  <g stroke="none">
+    <rect x="626" y="344" width="135" height="6" rx="3" fill="#1a5fb4"/>
+    <rect x="626" y="354" width="105" height="4" rx="2" fill="#aaa"/>
+    <rect x="626" y="371" width="120" height="6" rx="3" fill="#1a5fb4"/>
+    <rect x="626" y="381" width="95" height="4" rx="2" fill="#aaa"/>
+    <rect x="626" y="398" width="128" height="6" rx="3" fill="#1a5fb4"/>
+    <rect x="626" y="408" width="100" height="4" rx="2" fill="#aaa"/>
+  </g>
+  <text x="687" y="436" text-anchor="middle" fill="#555" stroke="none" font-size="11">(ranking)</text>
+</svg>

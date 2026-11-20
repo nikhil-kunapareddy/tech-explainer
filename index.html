@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tech Explainer</title>
+<link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Tech Explainer</h1>
+  <button id="theme-toggle" type="button" aria-label="Switch theme"></button>
+</header>
+
+<p>Inspired by <cite>Thing Explainer</cite> by Randall Munroe. Computer Science topics, told in simple words.</p>
+<p>Every post follows two rules: it uses no more than 1,000 words, and it has at least one picture.</p>
+
+<hr>
+
+<h2>Topics <span class="real-name">(click a topic to see what's inside)</span></h2>
+
+<details id="web-development">
+  <summary>Web Development</summary>
+  <ul>
+    <li><a href="topics/web-development/how-google-search-works.html">How does Google Search work?</a></li>
+  </ul>
+</details>
+
+<script>
+  // Open the topic named in the address, like index.html#web-development
+  var topic = document.getElementById(location.hash.slice(1));
+  if (topic && topic.tagName === "DETAILS") topic.open = true;
+</script>
+
+</body>
+</html>

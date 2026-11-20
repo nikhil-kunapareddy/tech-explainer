@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How does Google Search work? - Tech Explainer</title>
+<link rel="stylesheet" href="../../style.css">
+<script src="../../theme.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav><a href="../../index.html">Tech Explainer</a> &rsaquo; <a href="../../index.html#web-development">Web Development</a></nav>
+  <button id="theme-toggle" type="button" aria-label="Switch theme"></button>
+</header>
+
+<main>
+<h1>How does Google Search work? <span class="real-name">(search engines)</span></h1>
+
+<p>You type a few words into a box, and in less than a second you get a list of pages from all over the web. It feels like Google went and looked at the whole web just for you. It didn't. That would take far too long. Almost all of the work happened before you asked.</p>
+
+<p>Google does three big jobs: it reads the web, it builds a giant word list, and it picks which pages to show first.</p>
+
+<figure>
+  <img src="../../images/google-search.svg" width="800" height="440"
+       alt="Drawing in two parts. Before you ask: computer readers follow links between pages and fill a giant word list. When you ask: your words are looked up in the list, and the best pages are put first and sent back to you.">
+  <figcaption>Long before you search, computer readers follow links and fill a giant word list. When you search, your words are looked up in that list (pages 12 and 409 have both words), and the best pages go first.</figcaption>
+</figure>
+
+<h2>Computer readers that walk the web <span class="real-name">(crawling)</span></h2>
+
+<p>Google runs lots of computer programs whose only job is to read web pages, all day and all night. Each reader starts with pages it already knows. It reads a page, writes down every link on it, then follows those links to new pages and does the same thing again.</p>
+
+<p>It's like exploring a giant city by walking through every door you find, and writing down every new door you see along the way. Since pages link to other pages, the readers can find most of the web this way.</p>
+
+<p>Pages change, so the readers keep coming back. A news page that changes every few minutes gets visited often. An old page that never changes gets visited less.</p>
+
+<p>A page's owner can also leave a note at the front door that says "please don't read these rooms." Good readers follow the note. <span class="real-name">(This note is a file called robots.txt.)</span></p>
+
+<h2>A giant word list <span class="real-name">(the index)</span></h2>
+
+<p>Reading the web isn't enough. Google can't read billions of pages again every time someone asks a question. So, as the readers go, Google builds a giant list, like the one at the back of a book.</p>
+
+<p>For every word, the list says which pages have that word, and where on the page it shows up. The word "bread" might point to page 12, page 409, page 7,731, and millions more.</p>
+
+<p>When you search for "how to make bread", Google doesn't read any pages. It looks up "make" and "bread" in its list and finds the pages that have both. That's fast, because looking something up in a list is much quicker than reading.</p>
+
+<p>This list is so big that no single computer could hold it. It's cut into pieces and spread across thousands of computers in huge buildings full of computers. <span class="real-name">(These buildings are called data centers.)</span></p>
+
+<h2>Picking which page goes first <span class="real-name">(ranking)</span></h2>
+
+<p>For most searches, millions of pages match. But almost nobody looks past the first few, so the order matters most. Google looks at hundreds of signs to decide. Here are some big ones:</p>
+
+<ul>
+  <li><b>Where your words show up.</b> A page with "bread" in its title is probably more about bread than a page that says "bread" once near the bottom.</li>
+  <li><b>Who points to the page.</b> A link from one page to another is like a vote that says "this is worth reading." A vote from a page that lots of others vote for counts more. This was the big idea Google started with in the late 1990s. <span class="real-name">(PageRank)</span></li>
+  <li><b>How new it is.</b> If you search for last night's game, a page from last year won't help.</li>
+  <li><b>How good it is to use.</b> Pages that load fast, work on phones, and are safe get a small push up.</li>
+  <li><b>Where you are.</b> If you search "pizza" in Boston, you want pizza in Boston, not in Rome.</li>
+</ul>
+
+<p>Some results at the very top are paid for. These are ads, and Google marks them "Sponsored."</p>
+
+<h2>Understanding what you mean <span class="real-name">(language understanding)</span></h2>
+
+<p>People don't type perfectly, and they don't always use the same words as the page they want. So before looking anything up, Google tries to work out what you really mean.</p>
+
+<p>It fixes spelling mistakes ("Did you mean...?"). It knows that some words mean the same thing, like "car" and "auto." And it uses computer programs that learned from huge amounts of writing to understand whole questions. If you type "how tall is the big metal tower in paris", it knows you mean the Eiffel Tower, even though you never said its name. <span class="real-name">(These programs come from machine learning.)</span></p>
+
+<h2>Putting it all together</h2>
+
+<p>Before you ask:</p>
+
+<ol>
+  <li>Computer readers walk the web all the time, following links.</li>
+  <li>Everything they read goes into the giant word list.</li>
+</ol>
+
+<p>When you ask:</p>
+
+<ol start="3">
+  <li>You type your words, and Google works out what you mean.</li>
+  <li>It looks up your words in the list to find pages that match.</li>
+  <li>It puts the best pages first and sends you the list.</li>
+</ol>
+
+<p>Steps 1 and 2 never stop. Steps 3 to 5 usually take less than a second.</p>
+</main>
+
+<hr>
+<p><a href="../../index.html#web-development">&larr; More in Web Development</a></p>
+
+</body>
+</html>
